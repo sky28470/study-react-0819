@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+<!--     
+  理解：
+    http://localhost:3000   脚手架内置的服务器通过webpack的devServer开启的
+    public文件夹相当于 http://localhost:3000的根路径(/)
+    请求页面的路径层级出现错误,默认将public/index.html文件返回
+  问题：
+    路由为多级结构且页面刷新时, ./引入资源文件,路由刷新会产生样式丢失问题 
+  解决：
+    1.使用/或者 %PUBLIC_URL% 开头引入资源文件
+    2.使用HashRouter
+-->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
